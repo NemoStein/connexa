@@ -1,0 +1,22 @@
+{
+  "name": "sourbit.connexa",
+  "version": "0.1.0",
+  "displayName": "Connexa Grid Network",
+  "description": "Create and connect multiple grids together",
+  "unity": "2019.1",
+  "dependencies": {
+    "sourbit.locus": "0.1.0"
+  },
+  "keywords": [
+    "grid",
+    "graph",
+    "pathing",
+    "tool",
+    "tools"
+  ],
+  "author": {
+    "name": "NemoStein",
+    "email": "contato@nemostein.com.br",
+    "url": "http://nemostein.com.br"
+  }
+}

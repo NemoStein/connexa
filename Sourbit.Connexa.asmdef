@@ -1,0 +1,6 @@
+{
+	"name": "Sourbit.Connexa",
+	"references": [
+		"Sourbit.Locus"
+	]
+}
