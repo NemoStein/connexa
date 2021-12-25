@@ -23,10 +23,10 @@ namespace Sourbit.Connexa
                     var weights = new float[grid.Columns * grid.Rows];
                     for (var i = 0; i < grid.Columns * grid.Rows; i++)
                     {
-                        weights[i] = 1;
+                        weights[i] = grid.DefaultWeight;
                     }
 
-                    Graph.CreateGrid(grid.Columns, grid.Rows, weights);
+                    Graph.CreateGrid(grid.Columns, grid.Rows, weights, grid.AllowDiagonals);
                 }
 
                 foreach (var connection in Connections)
@@ -220,7 +220,7 @@ namespace Sourbit.Connexa
                                             {
                                                 Origin = ActiveNode,
                                                 Target = index,
-                                                Weigth = 1,
+                                                Weigth = grid.DefaultWeight,
                                                 OneWay = Event.current.shift
                                             });
                                         }

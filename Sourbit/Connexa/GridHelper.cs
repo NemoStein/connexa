@@ -7,6 +7,9 @@ namespace Sourbit.Connexa
         [Min(1)] public int Columns = 1;
         [Min(1)] public int Rows = 1;
 
+        public bool AllowDiagonals = true;
+        public float DefaultWeight = 1f;
+
         public Vector2Int PointToCell(Vector3 position, out bool found)
         {
             var offset = new Vector3(Columns / 2f, 0, Rows / 2f);
