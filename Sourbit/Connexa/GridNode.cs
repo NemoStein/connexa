@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Sourbit.Connexa
 {
-    public class GridHelper : MonoBehaviour
+    public class GridNode : MonoBehaviour
     {
         [Min(1)] public int Columns = 1;
         [Min(1)] public int Rows = 1;

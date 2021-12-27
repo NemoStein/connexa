@@ -7,7 +7,7 @@ namespace Sourbit.Connexa
 {
     public class GridNetwork : MonoBehaviour
     {
-        public GridHelper[] Grids;
+        public GridNode[] Grids;
         public List<GridConnection> Connections;
 
         DirectedGraph Graph;
@@ -111,7 +111,7 @@ namespace Sourbit.Connexa
             return nodePosition;
         }
 
-        public GridHelper GetNodeGrid(int node, out bool found)
+        public GridNode GetNodeGrid(int node, out bool found)
         {
             found = default;
 
